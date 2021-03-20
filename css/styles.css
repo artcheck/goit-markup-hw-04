@@ -457,31 +457,29 @@ border-radius: 4px;
 
 /* ----------------------------- */
 
-
 /* Home work 4 */
 
-.contact-list_item:nth-child(1):before{
+/* Portfolio page */
+
+.contact-list_email:before{
   content: url("../icons/additional_icons/envelope.svg");
   cursor: pointer;
-  background-repeat: no-repeat;
+  
   fill: var(--title-text-color);
 }
-.contact-list_item:nth-child(1):hover:before{
+.contact-list_email:hover::before{
   content: url("../icons/additional_icons/envelope.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  
   fill: var(--accent-color);
 }
 .contact-list_item:nth-child(2):before{
   content: url("../icons/additional_icons/smartphone.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  
   fill: var(--title-text-color);
 }
-.contact-list_item:hover:nth-child(2):before{
+.contact-list_item:nth-child(2):hover:before{
   content: url("../icons/additional_icons/smartphone.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  
   fill: var(--accent-color);
 }
 /* Hero overlay */
@@ -500,7 +498,7 @@ border-radius: 4px;
   display: block;
   content: '';
   height: 120px;
- 
+  margin-bottom: 30px;
   background-color: var(--additional-background-colour);
   background-repeat: no-repeat;
   background-position: center;
@@ -520,4 +518,27 @@ border-radius: 4px;
   background-image: url("../icons/main_icons/astronaut\ 1.svg");
 }
 
+/* Our clients */
+.clients-list{
+  display: flex;
+    justify-content: center;
+}
 
+
+/* .clients-list-logo{
+  display: flex;
+  justify-content: space-between;
+} */
+.clients-list-logo::before{
+  display: flex;
+  justify-content: space-between;
+  fill: var(--accent-color);
+}
+
+
+
+/* Portfolio list item hover shadow */
+
+.portfolio_list:hover{
+  box-shadow: 2px 2px 2px var(--primary-bacground-color);
+}
