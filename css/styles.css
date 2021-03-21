@@ -5,6 +5,7 @@
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --additional-background-colour: #f5f4fa;
+  --stock-icon-color: #AFB1B8;
 }
 
 * {
@@ -517,27 +518,84 @@ border-radius: 4px;
 .features-list:nth-child(4)::before{
   background-image: url("../icons/main_icons/astronaut\ 1.svg");
 }
+/* ------------- */
 
-/* Our clients */
+/* Team member social list styles */
+
+.member-social_list{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.member-social-list_item{
+ 
+ 
+}
+.member-social-list_item:hover{
+  background-color: var(--accent-color);
+  border-radius: 50px;
+}
+.social-link:hover{
+ 
+}
+.social-list-icon{
+  fill: var(--stock-icon-color);
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+}
+.social-list-icon:hover{
+  fill: var(--primary-white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  
+  width: 20px;
+  height: 20px;
+  
+  
+}
+
+/* --------------------- */
+
+/* Our clients styles*/
+
 .clients-list{
   display: flex;
-    justify-content: center;
+  justify-content: space-between;
+    
 }
-
-
-/* .clients-list-logo{
+.clients-list_item{
+  width: 170px;
+  height: 90px;
   display: flex;
-  justify-content: space-between;
-} */
-.clients-list-logo::before{
-  display: flex;
-  justify-content: space-between;
+  align-items: center;
+}
+.clients-list_item:hover{
+  color: var(--accent-color);
+}
+.clients-list-logo{
+  fill: var(--stock-icon-color);
+  width: 150px;
+  height: 60px;
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: var(--stock-icon-color);
+  padding: 15px 10px;
+}
+.clients-list-logo:hover{
   fill: var(--accent-color);
+  border-color: var(--accent-color);  
 }
+/* ------------ */
 
 
 
-/* Portfolio list item hover shadow */
+
+
+
+/* Portfolio page styles */
 
 .portfolio_list:hover{
   box-shadow: 2px 2px 2px var(--primary-bacground-color);
