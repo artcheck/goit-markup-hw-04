@@ -128,7 +128,7 @@ ul {
 .contact-list {
   width: 350px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   color: var(--title-text-color);
   font-family: "roboto";
   align-items: center;
@@ -163,7 +163,7 @@ ul {
   padding: 25px 0px;
   display: flex;
   justify-content: space-between;
-  
+  max-width: -webkit-fill-available;
 }
 
 .hero-container {
@@ -186,13 +186,12 @@ ul {
 .hero-button {
   color: var(--primary-white-color);
   display: block;
-    margin: 0 auto;
+  margin: 0 auto;
   font-family: Roboto;
   font-weight: bold;
   font-size: 16px;
-  padding: 18px;
+  padding: 15px 30px;
   border: 0;
-  
   cursor: pointer;
   background: var(--accent-color);
   letter-spacing: 0.06em;
@@ -460,29 +459,42 @@ border-radius: 4px;
 
 /* Home work 4 */
 
-/* Portfolio page */
+/* Contact icons (envel/tel)*/
 
-.contact-list_email:before{
-  content: url("../icons/additional_icons/envelope.svg");
-  cursor: pointer;
-  
-  fill: var(--title-text-color);
+.cont-link-item_icon{
+  fill: var(--stock-icon-color);
+  width: 15px;
+  height: 15px;
+  padding-right: 10px;
 }
-.contact-list_email:hover::before{
-  content: url("../icons/additional_icons/envelope.svg");
-  
+.cont-link-item_icon:hover{
   fill: var(--accent-color);
 }
-.contact-list_item:nth-child(2):before{
+.cont-link{
+  display: flex;
+  align-content: center;
+}
+.contact-list_item:hover .cont-link-item_icon{
+  fill: var(--accent-color);
+}
+.cont-link:hover{}
+
+/* .contact-list_email:before{
+  content: url("../icons/additional_icons/envelope.svg");
+
+  fill: var(--title-text-color);
+}
+.contact-list_email:hover{
+  fill: var(--accent-color);
+}
+.contact-list_tel:nth-child(2):before{
   content: url("../icons/additional_icons/smartphone.svg");
-  
   fill: var(--title-text-color);
 }
 .contact-list_item:nth-child(2):hover:before{
   content: url("../icons/additional_icons/smartphone.svg");
-  
   fill: var(--accent-color);
-}
+} */
 
 /* ------------ */
 
@@ -531,10 +543,6 @@ border-radius: 4px;
   display: flex;
   justify-content: space-evenly;
   padding: 20px;
-}
-.member-social-list_item{
- 
- 
 }
 .member-social-list_item:hover{
   background-color: var(--accent-color);
@@ -645,7 +653,14 @@ border-radius: 4px;
 
 /* Portfolio page styles */
 
-.portfolio_list:hover{
-  box-shadow: 2px 2px 2px var(--primary-bacground-color);
+.portfolio-list_style{
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
+  
 }
+.portfolio-list_style:hover{
+  box-shadow: 1px 1px 1px 1px  rgba(0, 0, 0, 0.2);
+}
+
 /* -------------- */
