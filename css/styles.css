@@ -483,6 +483,9 @@ border-radius: 4px;
   
   fill: var(--accent-color);
 }
+
+/* ------------ */
+
 /* Hero overlay */
 
 .overlay{
@@ -492,6 +495,7 @@ border-radius: 4px;
   outline: 1px solid black;
   background-color: var(--primary-bacground-color); 
 }
+/* ----------------- */
 
 /* Features icons */
 
@@ -518,7 +522,8 @@ border-radius: 4px;
 .features-list:nth-child(4)::before{
   background-image: url("../icons/main_icons/astronaut\ 1.svg");
 }
-/* ------------- */
+
+/* ------------------------- */
 
 /* Team member social list styles */
 
@@ -533,7 +538,8 @@ border-radius: 4px;
 }
 .member-social-list_item:hover{
   background-color: var(--accent-color);
-  border-radius: 50px;
+  border-radius: 20px;
+  height: 40px;
 }
 .social-link:hover{
  
@@ -550,11 +556,8 @@ border-radius: 4px;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  
   width: 20px;
   height: 20px;
-  
-  
 }
 
 /* --------------------- */
@@ -588,9 +591,44 @@ border-radius: 4px;
   fill: var(--accent-color);
   border-color: var(--accent-color);  
 }
-/* ------------ */
 
+/* --------------------*/
 
+/* Footer social styles */
+
+.footer-cont{
+  display: flex;
+}
+.footer-style{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-social{
+  display: flex;
+  padding: 67px;
+}
+.footer-social_title{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  padding-bottom: 30px;
+  
+}
+.footer-social_list{
+  display: flex;
+}
+.footer-social_icon{
+  background-color: var(--aditional-text-color);
+  border-radius: 20px;
+  
+}
+/* ------------------- */
 
 
 
@@ -600,3 +638,4 @@ border-radius: 4px;
 .portfolio_list:hover{
   box-shadow: 2px 2px 2px var(--primary-bacground-color);
 }
+/* -------------- */
