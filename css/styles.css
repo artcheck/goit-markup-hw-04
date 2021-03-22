@@ -463,8 +463,8 @@ border-radius: 4px;
 
 .cont-link-item_icon{
   fill: var(--stock-icon-color);
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 17px;
   padding-right: 10px;
 }
 .cont-link-item_icon:hover{
@@ -545,6 +545,11 @@ border-radius: 4px;
   padding: 20px;
 }
 .member-social-list_item:hover{
+  background-color: var(--accent-color);
+  border-radius: 20px;
+  height: 40px;
+}
+.social-link:focus{
   background-color: var(--accent-color);
   border-radius: 20px;
   height: 40px;
