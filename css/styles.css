@@ -2,7 +2,7 @@
   --primary-bacground-color: #2f303a;
   --title-text-color: #212121;
   --aditional-text-color: #757575;
-  --accent-color: #4D5AE5;
+  --accent-color: #4d5ae5;
   --primary-white-color: #ffffff;
   --additional-background-colour: #f5f4fa;
 }
@@ -356,11 +356,15 @@ ul {
   padding-left: 20px;
 }
 
-
 /* Hero overlay */
 
-.overlay{
-  background-image:  linear-gradient(to right,rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('../images/hero_img.jpg');
+.overlay {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../images/hero_img.jpg");
   background-size: cover;
   background-position: center;
   background-color: var(--primary-bacground-color);
@@ -369,9 +373,9 @@ ul {
 
 /* Features icons */
 
-.features-list::before{
+.features-list::before {
   display: block;
-  content: '';
+  content: "";
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--additional-background-colour);
@@ -380,16 +384,16 @@ ul {
   border-radius: 4%;
 }
 
-.features-list:nth-child(1):before{
+.features-list:nth-child(1):before {
   background-image: url("../icons/main_icons/antenna\ 1.svg");
 }
-.features-list:nth-child(2)::before{
+.features-list:nth-child(2)::before {
   background-image: url("../icons/main_icons/clock\ 1.svg");
 }
-.features-list:nth-child(3)::before{
+.features-list:nth-child(3)::before {
   background-image: url("../icons/main_icons/diagram\ 1.svg");
 }
-.features-list:nth-child(4)::before{
+.features-list:nth-child(4)::before {
   background-image: url("../icons/main_icons/astronaut\ 1.svg");
 }
 
@@ -397,29 +401,29 @@ ul {
 
 /* Team member social list styles */
 
-.member-social_list{
+.member-social_list {
   display: flex;
   justify-content: space-evenly;
   padding: 20px;
 }
-.social-link:focus{
+.social-link:focus {
   background-color: var(--accent-color);
   border-radius: 20px;
   height: 40px;
 }
-.social-link{
- display: flex;
- border-radius: 50%;
- background-color: var(--accent-color);
+.social-link {
+  display: flex;
+  border-radius: 50%;
+  background-color: var(--accent-color);
 }
-.social-list-icon{
+.social-list-icon {
   fill: var(--primary-white-color);
   width: 20px;
   height: 20px;
   padding: 10px;
 }
 
-.social-list-icon:hover{
+.social-list-icon:hover {
   fill: var(--accent-color);
   border: 1px groove var(--accent-color);
   background-color: var(--primary-white-color);
@@ -441,22 +445,21 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.clients-list{
+.clients-list {
   display: flex;
   justify-content: space-between;
   padding-top: 50px;
 }
-.clients-list_item{
+.clients-list_item {
   width: 170px;
   height: 90px;
   display: flex;
   align-items: center;
-  
 }
-.clients-list_item:hover{
+.clients-list_item:hover {
   color: var(--accent-color);
 }
-.clients-list-logo{
+.clients-list-logo {
   fill: var(--aditional-text-color);
   width: 150px;
   height: 60px;
@@ -466,51 +469,50 @@ ul {
   padding: 15px 10px;
   color: var(--aditional-text-color);
 }
-.clients-list-logo:hover{
+.clients-list-logo:hover {
   fill: var(--accent-color);
-  border-color: var(--accent-color);  
+  border-color: var(--accent-color);
 }
 
 /* --------------------*/
 
 /* Footer social styles */
 
-.footer-cont{
+.footer-cont {
   display: flex;
 }
-.footer-style{
+.footer-style {
   display: flex;
   flex-direction: row;
-
 }
-.footer-social{
+.footer-social {
   display: flex;
   flex-direction: column;
   padding-left: 70px;
 }
-.footer-social_title{
-  margin: 0 ;
+.footer-social_title {
+  margin: 0;
   font-size: 16px;
   line-height: 16px;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
   text-align: left;
 }
-.footer-social_list{
+.footer-social_list {
   display: flex;
   justify-content: end;
   padding: 0;
 }
-.social-link{
+.social-link {
   display: flex;
 }
-.footer-social_icon{
+.footer-social_icon {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   height: 40px;
   margin-right: 10px;
 }
-.footer-social-list-icon{
+.footer-social-list-icon {
   fill: var(--primary-white-color);
   width: 20px;
   height: 20px;
@@ -524,19 +526,15 @@ ul {
 }
 /* ------------------- */
 
-
-
-
 /* Portfolio page styles */
 
-.portfolio-list_style{
-  background: #FFFFFF;
-  border: 1px solid #EEEEEE;
+.portfolio-list_style {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
   box-sizing: border-box;
-  
 }
-.portfolio-list_style:hover{
-  box-shadow: 1px 1px 1px 1px  rgba(0, 0, 0, 0.2);
+.portfolio-list_style:hover {
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 /* -------------- */
